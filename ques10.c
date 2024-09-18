@@ -2,15 +2,13 @@
 
 int main(){
 
-    int hh, mm;
+    char time[] = "";
 
-    printf("enter hour: ");
-    scanf("%d", &hh);
+    printf("enter time in the format HH:MM: ");
+    scanf("%s", &time);
 
-    printf("enter minute: ");
-    scanf("%d", &mm);
-
-    printf("time is %d:%d", hh, mm);
+    printf("Hour is %c%c\n", time[0], time[1]);
+    printf("Minute is %c%c\n", time[3], time[4]);
 
     return 0;
-} 
+}

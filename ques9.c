@@ -1,10 +1,10 @@
-#include <stdio.h>
+# include<stdio.h>
 
-int main() {
+int main(){
 
     char date[] = "";
 
-    printf("Enter date in DD/MM/YYYY format: ");
+    printf("enter date in the format DD/MM/YYYY: ");
     scanf("%s", &date);
 
     printf("Date is %c%c\n", date[0], date[1]);
