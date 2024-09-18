@@ -2,18 +2,14 @@
 
 int main() {
 
-    int dd, mm, year;
+    char date[] = "";
 
-    printf("Enter date (day): ");
-    scanf("%d", &dd);
+    printf("Enter date in DD/MM/YYYY format: ");
+    scanf("%s", &date);
 
-    printf("Enter month: ");
-    scanf("%d", &mm);
-
-    printf("Enter year: ");
-    scanf("%d", &year);
-
-    printf("Date is %d/%d/%d ", dd, mm, year);
+    printf("Date is %c%c\n", date[0], date[1]);
+    printf("Month is %c%c\n", date[3], date[4]);
+    printf("Year is %c%c%c%c\n", date[6], date[7], date[8], date[9]);
 
     return 0;
 }
